@@ -22,14 +22,14 @@
 <body class="body">
     <!--Шапка -->
     <header class="header"> 
-        <div class="container">
-            <nav class="menu"> 
+        <div class="container header-container">
+            <nav class="header-nav"> 
             
             <a href="" class="logo" > Web<span class="accent-header">Studio</span></a>
             
         
-            <ul class="site-nav"> 
-              <li class="item"><a href="./index.html" class="link-current" >Студия</a></li>
+            <ul class="site-nav list"> 
+              <li class="item"><a href="./index.html" class="link current" >Студия</a></li>
               <li class="item"><a href="./portfolio.html" class="link" >Портфолио</a></li>
               <li class="item"><a href="" class="link" >Контакты</a></li>
 
@@ -37,10 +37,10 @@
             </nav>
             <ul class="auth list">
 
-               <li>
+               <li class="item">
                    <a href="mailto:info@devstudio.com" class="link" >info@devstudio.com</a>   
                </li>
-               <li>
+               <li class="item">
                    <a href="tel:+380961111111" class="link" >+380961111111</a>
                </li>
             </ul>
@@ -63,32 +63,32 @@
 
     <section class="post-qualities "> 
         <div class="container">
-            <h2 class="name">Наши качества</h2>
-            <ul >
-            <li>
+            <h2 class="visual-hidden">Наши качества</h2>
+            <ul class="qualities" >
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>  
             </li>
-            <li>
+            <li class="item">
                <h3 class="title">Пунктуальность</h3> 
                <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                </p>
             </li>
-            <li>
+            <li class="item">
                 <h3 class="title">Планирование</h3>
                 <p class="text">
                     Равным образом консультация с широким активом в значительной степени обуславливает.
                 </p>
             </li>
-            <li>
+            <li class="item">
                 <h3 class="title">Современные технологии</h3>
                 <p class="text">
                     Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                 </p>
-            </li>
+           
         </ul>
 
         </div>
@@ -98,11 +98,11 @@
     <section class="section"> 
         <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul>
-            <li><img src="./images/img.png" alt="пишем коды"></li>
-            <li><img src="./images/img-2.png" alt="делаем приложения"></li>
-            <li><img src="./images/box3.png" alt="работаем над эстетикой"></li>
-        </ul>
+        <ul class="img">
+            <li class="item"><img src="./images/img.png" alt="пишем коды"></li>
+            <li class="item"><img src="./images/img-2.png" alt="делаем приложения"></li>
+            <li class="item"><img src="./images/box3.png" alt="работаем над эстетикой"></li>
+        </ul class="imag">
 
         </div>
        
@@ -117,47 +117,55 @@
         
         
             <ul class="card">
-            <li>
-                <div class="card-box">
+            <li class="item">
+                
                      <img class="card-img" src="./images/img.jpg" alt="Игорь Демьяненко" width="270">
-                     <h3 class="card-title">Игорь Демьяненко</h3>
-                     <p class="card-text">Product Designer</p>
-                </div>
+                     <div class="card-box">
+                         <h3 class="card-title">Игорь Демьяненко</h3>
+                         <p class="card-text">Product Designer</p>
+                     </div>
+                     
+                
              
             </li>
 
 
-            <li>
+            <li class="item">
+                
+                <img src="./images/img-2.jpg" alt="Ольга Репина" width="270">
                 <div class="card-box">
-                    <img src="./images/img-2.jpg" alt="Ольга Репина" width="270">
                     <h3 class="card-title">Ольга Репина</h3>
                     <p class="card-text">Frontend Developer</p>
-
                 </div>
+                
+                
                  
         
             </li>
 
 
-            <li>
+            <li class="item">
+                <img src="./images/img-3.jpg" alt="Николай Тарасов" width="270" class="img">
                 <div class="card-box">
-                     <img src="./images/img-3.jpg" alt="Николай Тарасов" width="270" class="img">
-                     <h3 class="card-title">Николай Тарасов</h3>
-                     <p class="card-text">Marketingr</p>
+                    <h3 class="card-title">Николай Тарасов</h3>
+                    <p class="card-text">Marketingr</p>
                 </div>
+                     
+                
                
             </li>
 
 
-            <li>
+            <li class="item">
+                
+                <img src="./images/img-4.jpg" alt="Михаил Ермаков" width="270">
                 <div class="card-box">
-                    <img src="./images/img-4.jpg" alt="Михаил Ермаков" width="270">
-                <h3 class="card-title">Михаил Ермаков</h3>
-                <p class="card-text">PUI Designer</p>
+                    <h3 class="card-title">Михаил Ермаков</h3>
+                    <p class="card-text">PUI Designer</p>
 
                 </div>
                 
-            </li>
+             </li>
         </ul>
 
         </div>
@@ -169,13 +177,13 @@
     <!--футер-->
     <footer class="footer">
         <div class="container">
-            <a href="" class="logo">Web<span class="accent-footer">Studio</span></a>
+            <a href="" class="logo footer">Web<span class="accent-footer">Studio</span></a>
         <address class="address">
-            <a href="https://goo.gl/maps/dFAC5abpAvMkVo2K9" class="address-link" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
             
-            <a href="mailto:info@devstudio.com" class="link" >info@devstudio.com</a>
-            <a href="tel:+380961111111" class="link">+380961111111</a>
-
+                <a href="https://goo.gl/maps/dFAC5abpAvMkVo2K9" class="address-link link" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="mailto:info@devstudio.com" class="link mail" >info@devstudio.com</a>
+                <a href="tel:+380961111111" class="link">+380961111111</a>
+            
         </address>
         </div>
         
